@@ -1,0 +1,230 @@
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) { 
+
+	#resume{
+		display: none;
+	}
+	.sidebar{
+		height: 100vh;
+		width: 0%;
+		background:#353b48;	
+	}
+
+	.sidebar-active {
+		width: 100%;
+	}
+
+	.sidebar-anchor:hover:before{
+		width: 0%;
+	}
+
+	#brand{
+		font-size: 30px;
+		padding-left: 2rem;
+		padding-top: 2rem;
+	}
+
+	.showcase-content p{
+		font-size: 2rem;
+	}
+	.showcase-content h1{
+		font-size: 2.75rem;
+	}
+
+	.abt-showcase-cnt h1,.bio-cnt h1{
+		font-size: 2.75rem;
+	}
+
+	.sm-list{
+		display: block;
+	}
+
+	.top-section h1{
+		font-size: 2.25rem;
+	}
+
+	.res-cnt h1{
+		font-size: 2.25rem;
+	}
+
+	.top-section p{
+		font-size: 1.25rem;
+	}
+
+	.bottom-contact{
+		grid-template-columns: 1fr;
+		padding-top: 2rem;
+	}
+	.bottom-contact img{
+		margin-bottom: 2rem;
+	}
+
+	hr{
+		width: 80%;
+		margin: auto;
+	}
+
+	.form-section-content{
+		grid-template-columns: 1fr;
+	}
+
+	.form{
+		padding-top: 0;
+	}
+
+	.btn{
+		margin-top: 2rem;
+	}
+
+	.view-scroll{
+		height: 490px;
+		overflow-y: scroll;
+	}
+
+	.btn-set{
+		padding: 1rem 3rem;
+	}
+
+	.edu-cnt p{
+		width: 100%;
+		margin-right: 0%;
+	}
+	.skl-cnt p{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.gallery-grid img,.gallery-grid{
+		display: block;
+	}
+
+	.gallery-grid{
+		padding: 0 ;
+	}
+
+	.gallery-grid div img{
+		height: 40vw;
+		width: 80vw;
+	}
+
+	.edu-cnt div{
+		border: none;
+		padding-left: 0;
+	}
+
+	.skl-cnt{
+		text-align: left;
+	}
+
+	.skl-cnt div{
+		border-right:  none;
+		padding-right: none	
+	}
+
+	.scroll-down{
+		display: none;
+	}
+
+	.project-gallery h1{
+		font-size: 2rem;
+	}
+
+	.timeline::before{
+		display: none;
+	}
+
+	.timeline{
+		display: block;
+	}
+
+	.timeline ul li:nth-child(odd){
+		display: block;
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	.timeline ul li:nth-child(even){
+		display: block;
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+
+	.timeline ul li{
+		margin: 1rem 0;
+	}
+
+	.circle{
+		display: none;
+	}
+}
+
+@media (max-width:768px){
+
+	.gallery-grid{
+		grid-template-columns: 1fr;
+	}
+
+	.gallery-grid div{
+		margin: 2rem 0;
+	}
+
+	#home{
+		height: 100vh;
+	}
+
+	.sidebar-anchor:hover:before{
+		width: 0%;
+	}
+	#top-corner,#bottom-corner{
+		display: none;
+	}
+
+	.btn{
+		background: rgba(53, 59, 72,1.0);
+		color: #fff;
+	}
+
+	.sm-list{
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.edu-cnt p{
+		width: 100%;
+		margin-right: 0%;
+	}
+	.skl-cnt p{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.timeline::before{
+		display: none;
+	}
+
+	.timeline{
+		display: block;
+	}
+
+	.timeline ul li:nth-child(odd){
+		display: block;
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	.timeline ul li:nth-child(even){
+		display: block;
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+
+	.timeline ul li{
+		background-color: #c6f7ed;
+		margin: 1rem 0;
+	}
+
+	.circle{
+		display: none;
+	}
+}

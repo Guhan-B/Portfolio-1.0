@@ -1,6 +1,22 @@
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575px) { 
 
+	#more{
+		display: none;
+	}
+	#morebtn{
+		display: block;
+	}
+	#dot{
+		display: inline;
+	}
+	.cards{
+		display: block;
+	}
+	.card{
+		margin: 1rem 0;
+		padding: 2rem 0;
+	}
 	#resume{
 		display: none;
 	}
@@ -76,10 +92,7 @@
 		margin-top: 2rem;
 	}
 
-	.view-scroll{
-		height: 490px;
-		overflow-y: scroll;
-	}
+
 
 	.btn-set{
 		padding: 1rem 3rem;
@@ -163,6 +176,10 @@
 
 	.gallery-grid{
 		grid-template-columns: 1fr;
+	}
+
+	.cards{
+		grid-template-columns: 1fr 1fr;
 	}
 
 	.gallery-grid div{

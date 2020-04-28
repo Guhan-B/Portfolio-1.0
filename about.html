@@ -91,7 +91,8 @@
 			<h1>Hello!</h1>
 			<h1>I'm <span class="blue">Guhan</span>.</h1>
 			<div class="view-scroll">
-			<p>I'm a computer science engineering student from MIT, India.I'm passionate and curious about learning new stuff every day. I started the amazing journey in the world of computers and programming from my 10th grade. Learning stuff in computer sciences always makes me excited and programming gives me a sense of satisfaction. Mathematics is my second subject of interest. I might sound like a nerd in these lines but trust me I'm not one. Often I  would take up mini projects to keep my self motivated while learning and these projects can be found on my GitHub page. Apart from this, I love photography, editing, designing, and music. My fields of interest are Data Science, Machine Learning, AI and Web Development. Currently, I'm based in Chennai, India and I'm going to complete my 1st year on engineering.</p>
+			<p>I'm a computer science engineering student from MIT, India.I'm passionate and curious about learning new stuff every day. I started the amazing journey in the world of computers and programming from my 10th grade. Learning stuff in computer sciences<span id="dot">...</span> <span id="more"> always makes me excited and programming gives me a sense of satisfaction. Mathematics is my second subject of interest. I might sound like a nerd in these lines but trust me I'm not one. Often I  would take up mini projects to keep my self motivated while learning and these projects can be found on my GitHub page. Apart from this, I love photography, editing, designing, and music. My fields of interest are Data Science, Machine Learning, AI and Web Development. Currently, I'm based in Chennai, India and I'm going to complete my 1st year on engineering.</span></p>
+			<button id="morebtn" onclick="toggleText()">Read More</button>
 			</div>
 		</div>	
 	</section>
@@ -128,44 +129,112 @@
 		</div>
 	</section>
 
-	<div class="container-lg"><hr></div>
+	<!-- <div class="container-lg"><hr></div> -->
 
 	<section class="eduction">
 		<div class="container-lg edu-cnt">
-			<h1>SKILLS</h1>
-			<div class="timeline">
-				<ul>
-					
-					<li class="reveal">
-						<div class="circle"></div>
-						<div class="content">
-							<h2>C and C++</h2>
-							<p>My first and favorite languages. I am fluent and good at writing programs in these two languages.</p>
+			<h1>&nbsp;SKILLS&nbsp;</h1>
+			<div class="cards">
+				<div class="card">
+					<div class="img-grp">
+						<img id="html" src="./img/skills/html.png">
+					</div>
+					<h2>Html</h2>
+					<div class="bar">
+						<div class="chart" data-percent="90" id="htmlld">
+							<span>90</span>
 						</div>
-					</li>
-					<li class="reveal">
-						<div class="circle"></div>
-						<div class="content">
-							<h2>Javascript</h2>
-							<p>I have been learning js for an year and i am also familiar in the frontend framework vue.js and have created web applications using this.</p>
+					</div>	
+				</div>
+				<div class="card">
+					<div class="img-grp">
+						<img id="css" src="./img/skills/css.png">
+					</div>
+					<h2>css</h2>
+					<div class="bar">
+						<div class="chart" data-percent="90" id="cssld">
+							<span>90</span>
 						</div>
-					</li>
-					<li class="reveal">
-						<div class="circle"></div>
-						<div class="circle"></div>
-						<div class="content">
-							<h2>HTML and CSS</h2>
-							<p>I am good in creating stunning websites with html and css.I have created lots of good looking websites for my friends and clients</p>
+					</div>	
+				</div>
+				<div class="card">
+					<div class="img-grp">
+						<img id="js" src="./img/skills/js.png">
+					</div>
+					<h2>javascript</h2>
+					<div class="bar">
+						<div class="chart" data-percent="85" id="jsld">
+							<span>85</span>
 						</div>
-					</li>
-					<li class="reveal">
-						<div class="circle"></div>
-						<div class="content">
-							<h2>Python</h2>
-							<p>Honestly, Python makes life simple. I love to code in this language mainly for competitive programming. I have a good knowledge of Python. I am familiar with advanced python. I can work with libraries like seaborn, pandas, and matplotlib.</p>
+					</div>
+				</div>
+				<div class="card">
+					<div class="img-grp">
+						<img id="php" src="./img/skills/php.png">
+					</div>
+					<h2>php</h2>
+					<div class="bar">
+						<div class="chart" data-percent="80" id="phpld">
+							<span>80</span>
 						</div>
-					</li>
-					<div style="clear: both;"></div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="img-grp">
+						<img id="vuejs" src="./img/skills/vuejs.png">
+					</div>
+					<h2>vue.js</h2>
+					<div class="bar">
+						<div class="chart" data-percent="70" id="vueld">
+							<span>70</span>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="img-grp">
+						<img id="ccpp" src="./img/skills/ccpp.png">
+					</div>
+					<h2>c and c++</h2>
+					<div class="bar">
+						<div class="chart" data-percent="90" id="ccppld">
+							<span>90</span>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="img-grp">
+						<img id="py" src="./img/skills/python.png">
+					</div>
+					<h2>Python</h2>
+					<div class="bar">
+						<div class="chart" data-percent="80" id="pyld">
+							<span>80</span>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="img-grp">
+						<img id="flutter" src="./img/skills/flutter.png">
+					</div>
+					<h2>Flutter</h2>
+					<div class="bar">
+						<div class="chart" data-percent="10" id="ftld">
+							<span>10</span>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="img-grp">
+						<img id="flutter" src="./img/skills/ps.png">
+					</div>
+					<h2>Photoshop</h2>
+					<div class="bar">
+						<div class="chart" data-percent="70" id="psld">
+							<span>70</span>
+						</div>
+					</div>
+				</div>
+				
 				</ul>
 			</div>
 		</div>
@@ -190,12 +259,12 @@
 		</div>
 	</footer>
 	
-	<!--=========barba.js cdn section=========-->
-	<script src="https://unpkg.com/@barba/core"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
 
 	<!--============jquery js section===========-->
 	<script src="js/jquery-1.12.4.min.js"></script>
+
+	<!--============jquery js section===========-->
+	<script src="js/easypiechart.js"></script>
 
 	<!--============custom js section===========-->
 
@@ -207,7 +276,7 @@
 	<!--=========scrollreveal.js cdn section=========-->
 	<script src="https://unpkg.com/scrollreveal"></script>
 
-	<script>window.addEventListener('load',function(){ScrollReveal().reveal('#abt',{ delay: 250 });});ScrollReveal({reset:true});ScrollReveal().reveal('.reveal',{ delay: 300 });</script>
+	<script>window.addEventListener('load',function(){ScrollReveal().reveal('#abt',{ delay: 250 });});ScrollReveal({reset:false});ScrollReveal().reveal('.reveal',{ delay: 300 });</script>
 
 </body>
 </html>

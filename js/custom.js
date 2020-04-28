@@ -1,3 +1,28 @@
+//========== circle ============
+
+var config = {
+  easing: 'easeOutElastic',
+  delay: 3000,
+  barColor: '#69c',
+  trackColor: '#ace',
+  scaleColor: false,
+  lineWidth: 10,
+  trackWidth:10,
+  size: 60,
+  lineCap: 'butt'
+};
+new EasyPieChart(document.querySelector('#cssld'),config);
+new EasyPieChart(document.querySelector('#phpld'),config);
+new EasyPieChart(document.querySelector('#jsld'),config);
+new EasyPieChart(document.querySelector('#vueld'),config);
+new EasyPieChart(document.querySelector('#ftld'),config);
+new EasyPieChart(document.querySelector('#ccppld'),config);
+new EasyPieChart(document.querySelector('#pyld'),config);
+new EasyPieChart(document.querySelector('#psld'),config);
+new EasyPieChart(document.querySelector('#htmlld'),config);
+
+
+
 //==================side-bar==================
 
 (function () {
@@ -60,3 +85,19 @@ document.addEventListener("DOMContentLoaded", function() { // On DOM Load initia
   if(textArray.length) setTimeout(type, newTextDelay + 250);
 });
 
+//================================
+function toggleText(){
+  var btn = document.querySelector("#morebtn");
+  var dot = document.querySelector("#dot");
+  var more = document.querySelector("#more");
+  if(more.style.display == 'none'){
+    more.style.display = 'inline';
+    btn.textContent = 'Read Less';
+    dot.style.display = 'none';
+  }
+  else{
+    more.style.display = 'none';
+    btn.textContent = 'Read More';
+    dot.style.display = 'inline';
+  }
+}

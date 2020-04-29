@@ -1,25 +1,6 @@
 //========== circle ============
 
-var config = {
-  easing: 'easeOutElastic',
-  delay: 3000,
-  barColor: '#69c',
-  trackColor: '#ace',
-  scaleColor: false,
-  lineWidth: 10,
-  trackWidth:10,
-  size: 60,
-  lineCap: 'butt'
-};
-new EasyPieChart(document.querySelector('#cssld'),config);
-new EasyPieChart(document.querySelector('#phpld'),config);
-new EasyPieChart(document.querySelector('#jsld'),config);
-new EasyPieChart(document.querySelector('#vueld'),config);
-new EasyPieChart(document.querySelector('#ftld'),config);
-new EasyPieChart(document.querySelector('#ccppld'),config);
-new EasyPieChart(document.querySelector('#pyld'),config);
-new EasyPieChart(document.querySelector('#psld'),config);
-new EasyPieChart(document.querySelector('#htmlld'),config);
+
 
 
 

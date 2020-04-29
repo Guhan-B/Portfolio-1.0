@@ -1,6 +1,28 @@
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575px) { 
 
+	.gallery-grid{
+		margin-bottom: 3rem;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.pcard,.pcard .pimg{
+		width: 300px
+	}
+
+	.ptext h1{
+		font-size: 1.25rem;
+	}
+
+	.ptext p{
+		font-size: 1rem;
+	}
+
+	#phead{
+		margin: 2rem 0;
+	}
+
 	#more{
 		display: none;
 	}
@@ -107,18 +129,6 @@
 		margin-left: 0%;
 	}
 
-	.gallery-grid img,.gallery-grid{
-		display: block;
-	}
-
-	.gallery-grid{
-		padding: 0 ;
-	}
-
-	.gallery-grid div img{
-		height: 40vw;
-		width: 80vw;
-	}
 
 	.edu-cnt div{
 		border: none;
@@ -138,9 +148,6 @@
 		display: none;
 	}
 
-	.project-gallery h1{
-		font-size: 2rem;
-	}
 
 	.timeline::before{
 		display: none;
@@ -175,16 +182,19 @@
 @media (max-width:768px){
 
 	.gallery-grid{
-		grid-template-columns: 1fr;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.ptext p{
+		margin-bottom: 3rem;
 	}
 
 	.cards{
 		grid-template-columns: 1fr 1fr;
 	}
 
-	.gallery-grid div{
-		margin: 2rem 0;
-	}
 
 	#home{
 		height: 100vh;

@@ -34,6 +34,12 @@ html {
 	scroll-behavior: smooth;
 }
 
+#homebody{
+	position: fixed;
+	height: 100vh;
+	overflow: hidden;
+}
+
 /*=============== navber part start=======================*/
 
 .navbar{
@@ -47,7 +53,8 @@ html {
 .sidebar-btn{
 	position: relative;
 	transition: transform .7s ease-in-out;
-	z-index: 99999999;
+	z-index: 999999;
+	display: none;
 }
 
 .sidebar{

@@ -40,9 +40,20 @@
 
 	<!--===========media css section==============-->
 	<link rel="stylesheet" href="css/media.css">
+
+	<link rel="stylesheet" href="css/preloder.css">
 </head>
 
-<body >
+<body id="homebody">
+
+	<div class="preloader-container">
+		<div class="preloader">
+			<div class="box1"></div>
+			<div class="box2"></div>
+			<div class="box3"></div>
+		</div>
+	</div>
+	
 	<!--====================== navber part start ====================-->
 	<nav class="navbar">
 		<div class="sidebar-btn">
@@ -92,9 +103,16 @@
 	<!--=========fontawsome cdn section=========-->
 	<script src="https://kit.fontawesome.com/ffce93f859.js" crossorigin="anonymous"></script>
 
-	<!--=========scrollreveal.js cdn section=========-->
-	<script src="https://unpkg.com/scrollreveal"></script>
 
-	<script>window.addEventListener('load',function(){ScrollReveal().reveal('#home',{ delay: 250 });});</script>
+	<script>
+	window.addEventListener('load',function()
+	{
+		document.querySelector('.sidebar-btn').style.display = "block";
+		document.querySelector('.preloader-container').style.opacity = 0 ;
+		setTimeout(() => {
+			document.querySelector('.preloader-container').style.display = "none";
+		}, 500);
+	});
+	</script>
 </body>
 </html>

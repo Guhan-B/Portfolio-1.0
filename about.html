@@ -40,12 +40,19 @@
 
 	<!--===========media css section==============-->
 	<link rel="stylesheet" href="css/media.css">
-
-
+	
+	<link rel="stylesheet" href="css/preloder.css">
 
 </head>
 
 <body>
+	<div class="preloader-container">
+		<div class="preloader">
+			<div class="box1"></div>
+			<div class="box2"></div>
+			<div class="box3"></div>
+		</div>
+	</div>
 	<!--====================== navber part start ====================-->
 	<div class="wrapper">
 	<nav class="navbar">
@@ -273,10 +280,17 @@
 	<!--=========fontawsome cdn section=========-->
 	<script src="https://kit.fontawesome.com/ffce93f859.js" crossorigin="anonymous"></script>
 
-	<!--=========scrollreveal.js cdn section=========-->
-	<script src="https://unpkg.com/scrollreveal"></script>
+	<script>
 
-	<script>window.addEventListener('load',function(){ScrollReveal().reveal('#abt',{ delay: 250 });});ScrollReveal({reset:false});ScrollReveal().reveal('.reveal',{ delay: 300 });var config = {
+	window.addEventListener('load',function()
+	{
+		document.querySelector('.sidebar-btn').style.display = "block";
+		document.querySelector('.preloader-container').style.opacity = 0 ;
+		setTimeout(() => {
+			document.querySelector('.preloader-container').style.display = "none";
+		}, 500);
+	});
+	var config = {
 		easing: 'easeOutElastic',
 		delay: 3000,
 		barColor: '#69c',
@@ -287,15 +301,16 @@
 		size: 60,
 		lineCap: 'butt'
 	  };
-	  new EasyPieChart(document.querySelector('#cssld'),config);
-	  new EasyPieChart(document.querySelector('#phpld'),config);
-	  new EasyPieChart(document.querySelector('#jsld'),config);
-	  new EasyPieChart(document.querySelector('#vueld'),config);
-	  new EasyPieChart(document.querySelector('#ftld'),config);
-	  new EasyPieChart(document.querySelector('#ccppld'),config);
-	  new EasyPieChart(document.querySelector('#pyld'),config);
-	  new EasyPieChart(document.querySelector('#psld'),config);
-	  new EasyPieChart(document.querySelector('#htmlld'),config);</script>
+	new EasyPieChart(document.querySelector('#cssld'),config);
+	new EasyPieChart(document.querySelector('#phpld'),config);
+	new EasyPieChart(document.querySelector('#jsld'),config);
+	new EasyPieChart(document.querySelector('#vueld'),config);
+	new EasyPieChart(document.querySelector('#ftld'),config);
+	new EasyPieChart(document.querySelector('#ccppld'),config);
+	new EasyPieChart(document.querySelector('#pyld'),config);
+	new EasyPieChart(document.querySelector('#psld'),config);
+	new EasyPieChart(document.querySelector('#htmlld'),config);
+	</script>
 
 </body>
 </html>

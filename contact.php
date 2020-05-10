@@ -41,9 +41,19 @@
 	<!--===========media css section==============-->
 	<link rel="stylesheet" href="css/media.css">
 
+	<link rel="stylesheet" href="css/preloder.css">
+
 </head>
 
 <body>
+
+	<div class="preloader-container">
+		<div class="preloader">
+			<div class="box1"></div>
+			<div class="box2"></div>
+			<div class="box3"></div>
+		</div>
+	</div>
 	
 	<!--====================== navber part start ====================-->
 
@@ -190,6 +200,17 @@
 		}
 
 	?>
+
+	<script>
+	window.addEventListener('load',function()
+	{
+		document.querySelector('.sidebar-btn').style.display = "block";
+		document.querySelector('.preloader-container').style.opacity = 0 ;
+		setTimeout(() => {
+			document.querySelector('.preloader-container').style.display = "none";
+		}, 500);
+	});
+	</script>
 
 
 </body>

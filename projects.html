@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 	<meta charset="UTF-8">
@@ -41,11 +42,21 @@
 	<!--===========media css section==============-->
 	<link rel="stylesheet" href="css/media.css">
 
+	<link rel="stylesheet" href="css/preloder.css">
+
 
 
 </head>
 
 <body>
+
+	<div class="preloader-container">
+		<div class="preloader">
+			<div class="box1"></div>
+			<div class="box2"></div>
+			<div class="box3"></div>
+		</div>
+	</div>
 
 	<!--====================== navber part start ====================-->
 
@@ -54,9 +65,11 @@
 			<div class="nav-right">
 				<div class="button" id="btn">
 					<svg viewBox="0 0 800 600">
-						<path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" id="top"></path>
+						<path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200"
+							id="top"></path>
 						<path d="M300,320 L540,320" id="middle"></path>
-						<path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190" id="bottom" transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>
+						<path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190"
+							id="bottom" transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>
 					</svg>
 				</div>
 			</div>
@@ -67,10 +80,11 @@
 				<li class="sidebar-item"><a href="about.html" class="sidebar-anchor">About</a></li>
 				<li class="sidebar-item"><a href="contact.php" class="sidebar-anchor">Contact</a></li>
 				<li class="sidebar-item"><a href="projects.html" class="sidebar-anchor  current">Projects</a></li>
-				<li class="sidebar-item"><a href="pdf/sampleresume.pdf" target="_blank" class="sidebar-anchor">Résumé</a></li>
+				<li class="sidebar-item"><a href="pdf/sampleresume.pdf" target="_blank"
+						class="sidebar-anchor">Résumé</a></li>
 			</ul>
 		</div>
-		
+
 	</nav>
 	<!--====================== navber part ends ====================-->
 
@@ -85,7 +99,7 @@
 						<div class="ptext">
 							<h1>Portfolio Website</h1>
 							<p>Catagory : HTML ,CSS ,Javascript</p>
-							<a href="" class="github-link">Github</a>
+							<a href="https://github.com/Guhan-B/my-portfolio-website" class="github-link" target="_blank">Github</a>
 						</div>
 					</div>
 					<div class="pcard">
@@ -109,7 +123,7 @@
 						<div class="ptext">
 							<h1>Todo App In Vue.js</h1>
 							<p>Catagory : Javascript,Vue.js</p>
-							<a href="" class="github-link">Github</a>
+							<a href="https://github.com/Guhan-B/TodoApp-VueJs" class="github-link" target="_blank">Github</a>
 						</div>
 					</div>
 				</div>
@@ -119,18 +133,22 @@
 			</div>
 		</div>
 	</section>
-	
-	<footer >
+
+	<footer>
 		<div class="footer-content container-lg">
 			<div class="left">
 				<p>&copy; 2020 Guhan</p>
 			</div>
 			<div class="right">
-				<p><a href="https://www.instagram.com/_mr_knowhere_/" target="_blank">Instagram</a> : <a href="https://www.facebook.com/" target="_blank">Facebook</a> : <a href="https://twitter.com/Guhan63704794" target="_blank">Twitter</a> : <a href="mailto:bkguhan2001@gmail.com?Subject=Hello" target="_blank">Gmail</a> : <a href="#">Résumé</a></p>
+				<p><a href="https://www.instagram.com/_mr_knowhere_/" target="_blank">Instagram</a> : <a
+						href="https://www.facebook.com/" target="_blank">Facebook</a> : <a
+						href="https://twitter.com/Guhan63704794" target="_blank">Twitter</a> : <a
+						href="mailto:bkguhan2001@gmail.com?Subject=Hello" target="_blank">Gmail</a> : <a
+						href="#">Résumé</a></p>
 			</div>
 		</div>
 	</footer>
-	
+
 
 	<!--============jquery js section===========-->
 	<script src="js/jquery-1.12.4.min.js"></script>
@@ -141,10 +159,19 @@
 	<!--=========fontawsome cdn section=========-->
 	<script src="https://kit.fontawesome.com/ffce93f859.js" crossorigin="anonymous"></script>
 
-	<!--=========scrollreveal.js cdn section=========-->
-	<script src="https://unpkg.com/scrollreveal"></script>
+	<!--============jquery js section===========-->
+	<script src="js/easypiechart.js"></script>
 
-	<script>ScrollReveal().reveal('.reveal',{ delay: 300 });</script>
+	<script>
+	window.addEventListener('load',function()
+	{
+		document.querySelector('.sidebar-btn').style.display = "block";
+		document.querySelector('.preloader-container').style.opacity = 0 ;
+		setTimeout(() => {
+			document.querySelector('.preloader-container').style.display = "none";
+		}, 500);
+	});
+	</script>
 
 </body>
 
